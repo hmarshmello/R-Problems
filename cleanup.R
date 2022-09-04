@@ -13,7 +13,7 @@ readr::parse_integer
 #' @export
 readr::parse_double
 
-#' @export
+#' @export-
 readr::parse_datetime
 
 #' Overview of text data extraction functions
