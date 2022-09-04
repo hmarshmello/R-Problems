@@ -6,7 +6,7 @@ Some Projects coming soon
 
 ### R Problems
 - [Basics](https://github.com/hmarshmello/R-Problems/blob/main/Basics.R)
-- #### Spell-Check
+###### Spell-Check
 - [Aggregate-Data](https://github.com/hmarshmello/R-Problems/blob/main/Aggregate-data.R)
 - [CleanUp](https://github.com/hmarshmello/R-Problems/blob/main/cleanup.R)
 - [File_Info-Operation](https://github.com/hmarshmello/R-Problems/blob/main/file_info_operations.R)
