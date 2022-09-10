@@ -1,21 +1,7 @@
-a=11
-b=a*9
-# rm(list=ls()) #remove all vars
-# rm(b) #remove a var
-print(a)
+a = c(12,11)
+b = c(14,12)
 
-# save(a,file="Basics.Rdata")
-# save(list=ls(all.names=TRUE),file="Basics.Rdata")
-# save.image()
-# load(file="Basics.Rdata")
+l1 = list(a,b)
+print(l1)
 
-a = 4
-find.function <- function(a){
-  for(i in 1:4){
-    b<- i^2
-    print(b)
-  }
-}
-
-student_data = data.frame(student_id=c(1:4), 
-student_name=c(’Ram’,’Harish’,’Pradeep’,’Rajesh’))
+plot(1,3)
