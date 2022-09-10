@@ -116,7 +116,6 @@ iso_select_file_info.iso_file_list <- function(iso_files, ..., file_specific = F
       message(paste(info$label, collapse = "\n"))
     }
 
-    # check if same error for all files
     errors <- map_chr(isofiles_select, "error")
     if (!any(is.na(errors)) && all(errors == errors[1])) {
       warning(errors[[1]], immediate. = TRUE, call. = FALSE)
@@ -128,8 +127,6 @@ iso_select_file_info.iso_file_list <- function(iso_files, ..., file_specific = F
     file_info <- iso_files %>%
       # retrieve file info
       map(~.x$file_info) %>%
-      # combine in data frame (use safe bind to make sure different data column
-      # types of the same name don't trip up the combination)
       safe_bind_rows()
 
     # check if there are any file_info
