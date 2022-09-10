@@ -74,14 +74,12 @@ get_iso_object_versions <- function(iso_obj) {
     purrr::map(~if (!is.null(.x$version)) { .x$version } else { as.package_version("0.0.0") })
 }
 
-# get outdated boolean vector
 get_iso_object_outdated <- function(iso_obj) {
   iso_obj %>%
     get_iso_object_versions() %>%
     purrr::map_lgl(~.x < get_last_structure_update_version())
 }
 
-# test whether an iso object structure is outdated
 is_iso_object_outdated <- function(iso_obj) {
   iso_obj %>% get_iso_object_outdated() %>% any()
 }
