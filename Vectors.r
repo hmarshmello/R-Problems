@@ -3,7 +3,7 @@
   marks_byrange <- marks[c(2,3,5)]
   marks_byboolean <- marks[c(TRUE,FALSE,TRUE,FALSE,FALSE)]
   marks_bynegatrange <- marks[c(-3,-1)] #cancels the element in that pos
-  data <- c("East","West","East","North","North","East","West","West","West","East","North")
+  data <- c("East","West","East","North","North","East") # nolint
   ranges <- 5:13
   #Sequence
     print(seq(4,10, by = 1.2))
